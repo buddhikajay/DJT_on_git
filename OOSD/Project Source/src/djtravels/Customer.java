@@ -55,8 +55,17 @@ public class Customer implements Serializable {
     @Column(name = "Departure")
     private String departure;
 
-    public Customer() {
+
+    public Customer(Integer customerId, String customer, String firstName, String lastName, String address, String arrival, String departure) {
+        this.customerId = customerId;
+        this.customer = customer;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.arrival = arrival;
+        this.departure = departure;
     }
+    
 
     public Customer(Integer customerId) {
         this.customerId = customerId;

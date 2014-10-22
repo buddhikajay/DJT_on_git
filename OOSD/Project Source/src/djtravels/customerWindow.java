@@ -559,6 +559,14 @@ public class customerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_UpdateActionPerformed
 
     private void addCustomerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCustomerActionPerformed
+        
+        //Buddhika:Start
+        int customerId = Integer.parseInt(ID_txt.getText());
+        String customer = Customer_txt.getText();
+        Customer tempCustomer = new Customer(WIDTH, null, null, null, null, null, null);
+        //Buddhika:End
+        //Following code is originally added by Malith
+        /*
         try{
 
             String url = "jdbc:mysql://localhost:3306/company";
@@ -580,6 +588,8 @@ public class customerWindow extends javax.swing.JFrame {
         catch(Exception E){
 
         }
+        */
+        //End Malith
     }//GEN-LAST:event_addCustomerActionPerformed
 
     private void NIC_RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIC_RadioButtonActionPerformed
