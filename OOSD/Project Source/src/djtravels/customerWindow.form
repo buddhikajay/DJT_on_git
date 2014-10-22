@@ -3,11 +3,6 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
     <Component class="java.util.List" name="customerList">
-      <Properties>
-        <Property name="query" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$QueryBeanProperty$QueryEditor">
-          <ComponentRef name="default"/>
-        </Property>
-      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;djtravels.Customer&gt;"/>
       </AuxValues>
@@ -126,7 +121,7 @@
                   <Component id="pnlDetails" max="32767" attributes="0"/>
                   <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="16" max="32767" attributes="0"/>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -300,7 +295,7 @@
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="ID_txt" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="7" max="32767" attributes="0"/>
+                  <EmptySpace pref="8" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="FirstName_txt" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -580,21 +575,17 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="addCustomer" max="32767" attributes="0"/>
-                              <Component id="Update" pref="114" max="32767" attributes="0"/>
-                              <Component id="Delete" alignment="0" max="32767" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="Request" min="-2" pref="107" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSeparator2" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
                       <Component id="jLabel10" alignment="1" max="32767" attributes="0"/>
                       <Component id="jLabel9" alignment="1" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="Request" alignment="1" max="32767" attributes="0"/>
+                              <Component id="addCustomer" max="32767" attributes="0"/>
+                              <Component id="Update" pref="126" max="32767" attributes="0"/>
+                              <Component id="Delete" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -610,15 +601,12 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="Delete" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
-                      <Component id="Request" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="Request" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                   <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="68" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -647,8 +635,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeleteActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JSeparator" name="jSeparator2">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
