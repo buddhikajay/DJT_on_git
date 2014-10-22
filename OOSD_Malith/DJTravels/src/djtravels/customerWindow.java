@@ -513,6 +513,12 @@ public class customerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3KeyTyped
 
     private void addNewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewButtonActionPerformed
+        
+        int customerId = Integer.parseInt(customerIdText.getText());
+        String customer = customerText.getText();
+        System.out.println(customerId);
+        System.out.println(customer);
+        /* following code is added by Malith
         try{
             
                     String url = "jdbc:mysql://localhost:3306/company";
@@ -535,6 +541,7 @@ public class customerWindow extends javax.swing.JFrame {
         catch(Exception E){
             
         }
+        */
     }//GEN-LAST:event_addNewButtonActionPerformed
 
     private void clearSearchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearSearchButtonActionPerformed
@@ -576,7 +583,11 @@ public class customerWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_customerIdTextKeyTyped
 
     private void requestButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestButtonActionPerformed
-        // TODO add your handling code here:
+        
+        Request request = new Request();
+        request.setLocation(100,500);
+        request.setVisible(true);
+        this.setVisible(false);
         
     }//GEN-LAST:event_requestButtonActionPerformed
 
